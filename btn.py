@@ -16,3 +16,9 @@ class HBoxLayoutExample(App):
     layout = BoxLayout(padding = 10)
     colors = [red, green, blue, purple]
     for i in range(5)
+btn = Button(text = f"Este é o botão #{i + 1}", background_color = random.choice(colors))
+layout.add_widgets(btn)
+return layout
+if __name__ == "__main__":
+app = HBoxLayoutExample()
+app.run()
